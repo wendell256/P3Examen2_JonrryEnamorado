@@ -1,0 +1,6 @@
+#include "Escenario.h"
+#include "Bomba.h"
+#include "NBomba.h"
+#include "VBomba.h"
+#include "EBomba.h"
+#include "Player.h"
