@@ -1,6 +1,6 @@
 #include "Bomba.h"
 
-Bomba::Bomba(){
+Bomba::Bomba():Item(){
     explota = 3;
 }
 
@@ -14,4 +14,8 @@ int Bomba::getExplota(){
 
 int Bomba::getTipo(){
     return tipo;
+}
+
+string Bomba::verclase(){
+    return "Bomba";
 }

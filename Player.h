@@ -2,10 +2,10 @@
 #define PLAYER_H
 
 #include <string>
-
+#include "Item.h"
 using namespace std;
 
-class Player{
+class Player:public Item{
     protected:
         string name;
         bool estado;//true = vivo; false = muerto
@@ -14,8 +14,8 @@ class Player{
         Player(string,bool);
         Player();
         bool getEstado();
-        bool setEstado();
         bool getTipo();
+        string verclase();
 };
 
 #endif

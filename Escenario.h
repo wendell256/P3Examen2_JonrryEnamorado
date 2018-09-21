@@ -1,12 +1,32 @@
 #ifndef ESCENARIO_H
 #define ESCENARIO_H
 
+
+#include "Item.h"
+#include "Player.h"
+#include "Obstaculo.h"
+#include "Bomba.h"
+#include "VBomba.h"
+#include "NBomba.h"
+#include "EBomba.h"
+
+#include <vector>
+#include <iostream>
 #include <string>
 using namespace std;
 
 class Escenario{
-    string name;
+    protected:
+        string name;
+        Item*** tablero;
+        vector<Bomba> bombas;
+
+    public:
+        Escenario(string, Item***);
         
+        Item* getMatriz();
+        void print();
+        Item*** getTablero();
 
 };
 
