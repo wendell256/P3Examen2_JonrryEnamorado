@@ -27,6 +27,8 @@ class Escenario{
         Item* getMatriz();
         void print();
         Item*** getTablero();
+        bool moverplayer(int,int,int,int);
+        bool poner(int, int);
 
 };
 

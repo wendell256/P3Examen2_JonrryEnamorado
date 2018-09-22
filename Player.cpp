@@ -9,6 +9,7 @@ Player::Player():Item(){
 Player::Player(string name, bool tipo){
     this->name = name;
     this->tipo = tipo;
+    estado=true;
 }
 
 string Player::verclase(){
@@ -23,3 +24,6 @@ bool Player::getEstado(){
     return estado;
 }
 
+void Player::setName(string tmp){
+    name=tmp;
+}

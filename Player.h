@@ -16,6 +16,7 @@ class Player:public Item{
         bool getEstado();
         bool getTipo();
         string verclase();
+        void setName(string);
 };
 
 #endif
